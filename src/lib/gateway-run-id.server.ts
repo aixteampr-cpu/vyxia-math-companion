@@ -23,9 +23,6 @@ export function withGatewayRunIdHeader(
   gateway: { getRunId: () => string | undefined },
 ) {
   const headers = new Headers(response.headers);
-  headers.forEach((_, name) => {
-    if (!name.toLowerCase().startsWith("x-lovable-aig-")) headers.delete(name);
-  });
   const runId = gateway.getRunId();
   if (runId) headers.set(RUN_ID_HEADER, runId);
   return new Response(response.body, { status: response.status, statusText: response.statusText, headers });

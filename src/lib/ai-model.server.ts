@@ -16,7 +16,6 @@ export function createVyxiaModel(request: Request, modelId: string) {
     ? createAnthropic({
         baseURL,
         apiKey,
-        maxRetries: 0,
         headers: { "X-Lovable-AIG-SDK": "vercel-ai-sdk" },
         fetch: gateway.fetch,
       })(modelId)

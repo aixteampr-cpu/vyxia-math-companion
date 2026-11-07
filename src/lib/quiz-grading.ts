@@ -1,6 +1,6 @@
 export type ObjectiveQuestion = {
   id: string;
-  type: "multiple_choice" | "true_false" | "complete";
+  type: "multiple_choice" | "true_false" | "complete" | "essay";
   correctAnswer: string;
 };
 
