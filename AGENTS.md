@@ -31,3 +31,4 @@ use the editor.
 
 ## Vyxia architecture
 - Keep user-specific learning records protected by owner-scoped database policies; stream AI requests through authenticated TanStack server routes so provider credentials remain server-only.
+- Keep public student pages in file-based `src/routes`; `/` is the curriculum home so the preview opens directly to learning content.

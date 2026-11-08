@@ -28,7 +28,7 @@ async function saveMessages(
       user_id: userId,
       role: message.role,
       content: messageText(message),
-      parts: JSON.parse(JSON.stringify(message.parts)) as Database["public"]["Tables"]["chat_messages"]["Insert"]["parts"],
+      parts: JSON.parse(JSON.stringify(message.parts)) as Database["public"]["Tables"]["chat_messages"]["Row"]["parts"],
       ai_message_id: message.id,
       ai_model: message.role === "assistant" ? modelId : null,
     }));
