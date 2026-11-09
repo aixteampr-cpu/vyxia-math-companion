@@ -1,0 +1,4 @@
+- [ ] Replace curriculum index with a ChatGPT-style math tutor workspace and responsive navigation.
+- [ ] Add protected, route-addressable database-backed conversation threads, model/lesson selectors, file uploads, and generated infographic images.
+- [ ] Add saved quiz history/navigation and connect existing quiz data where available.
+- [ ] Verify identity/storage flows, runtime, builds, tests, and responsive chat UI; record remaining external limits.
