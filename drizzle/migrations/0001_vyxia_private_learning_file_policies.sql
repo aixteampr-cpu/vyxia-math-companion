@@ -1,0 +1,4 @@
+CREATE POLICY "Students can read their Vyxia files" ON storage.objects FOR SELECT TO authenticated USING (bucket_id = 'vyxia-student-files' AND (storage.foldername(name))[1] = auth.uid()::text);
+CREATE POLICY "Students can upload their Vyxia files" ON storage.objects FOR INSERT TO authenticated WITH CHECK (bucket_id = 'vyxia-student-files' AND (storage.foldername(name))[1] = auth.uid()::text);
+CREATE POLICY "Students can update their Vyxia files" ON storage.objects FOR UPDATE TO authenticated USING (bucket_id = 'vyxia-student-files' AND (storage.foldername(name))[1] = auth.uid()::text) WITH CHECK (bucket_id = 'vyxia-student-files' AND (storage.foldername(name))[1] = auth.uid()::text);
+CREATE POLICY "Students can delete their Vyxia files" ON storage.objects FOR DELETE TO authenticated USING (bucket_id = 'vyxia-student-files' AND (storage.foldername(name))[1] = auth.uid()::text);

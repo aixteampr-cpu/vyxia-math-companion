@@ -8,6 +8,13 @@
       "when": 1794075077442,
       "tag": "0000_create_vyxia_learning_tables",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1794345788475,
+      "tag": "0001_vyxia_private_learning_file_policies",
+      "breakpoints": true
     }
   ]
 }
