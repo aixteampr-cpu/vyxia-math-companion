@@ -32,3 +32,4 @@ use the editor.
 ## Vyxia architecture
 - Keep user-specific learning records protected by owner-scoped database policies; stream AI requests through authenticated TanStack server routes so provider credentials remain server-only.
 - Keep public student pages in file-based `src/routes`; `/` is the curriculum home so the preview opens directly to learning content.
+- Keep threaded tutor pages under `/chat/$threadId` and private attachment objects under a student-owned Storage folder, so chat identity and file access remain owner-scoped.
