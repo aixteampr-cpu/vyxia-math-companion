@@ -15,6 +15,13 @@
       "when": 1794345788475,
       "tag": "0001_vyxia_private_learning_file_policies",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1794573582474,
+      "tag": "0002_vyxia_chat_model_and_quiz_history",
+      "breakpoints": true
     }
   ]
 }
