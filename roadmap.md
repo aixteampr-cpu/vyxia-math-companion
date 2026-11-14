@@ -2,4 +2,5 @@
 - [ ] Add protected, route-addressable database-backed conversation threads, model/lesson selectors, file uploads, and generated infographic images.
 - [ ] Add saved quiz history/navigation and connect existing quiz data where available.
 - [x] Create a private student-file bucket with owner-folder access rules and enable Google/Lovable sign-in providers.
+- [ ] Add secure message-attachment records for uploaded lesson files and generated images, plus private infographic storage access.
 - [ ] Verify identity/storage flows, runtime, builds, tests, and responsive chat UI; record remaining external limits.
