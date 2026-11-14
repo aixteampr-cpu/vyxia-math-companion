@@ -22,6 +22,13 @@
       "when": 1794573582474,
       "tag": "0002_vyxia_chat_model_and_quiz_history",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1794650258648,
+      "tag": "0003_vyxia_message_attachment_records",
+      "breakpoints": true
     }
   ]
 }
